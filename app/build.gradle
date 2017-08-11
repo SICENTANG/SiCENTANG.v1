@@ -4,7 +4,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
-        applicationId "com.myoganugraha.sicentang_sql"
+        applicationId "com.myoganugraha.sicentang"
         minSdkVersion 19
         targetSdkVersion 25
         versionCode 1
@@ -19,9 +19,7 @@ android {
     }
 }
 
-repositories {
-    mavenCentral()
-}
+
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -37,8 +35,6 @@ dependencies {
     compile 'com.squareup.picasso:picasso:2.3.2'
     compile 'com.nineoldandroids:library:2.4.0'
     compile 'com.daimajia.slider:library:1.1.5@aar'
-    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
-    compile 'com.facebook.android:account-kit-sdk:4.+'
     testCompile 'junit:junit:4.12'
 }
 
