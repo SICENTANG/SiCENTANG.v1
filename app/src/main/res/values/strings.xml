@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SICENTANG ITK</string>
+    <string name="app_name">SICENTANG</string>
     <string name="hint_email">Email Anda</string>
     <string name="hint_password">Password Anda</string>
     <string name="hint_password1">Ulangi Password Anda</string>
