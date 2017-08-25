@@ -1,4 +1,3 @@
-
 apply plugin: 'com.android.application'
 
 
@@ -8,7 +7,7 @@ android {
     buildToolsVersion "25.0.2"
     defaultConfig {
         applicationId "com.myoganugraha.sicentang"
-        minSdkVersion 19
+        minSdkVersion 21
         targetSdkVersion 25
         versionCode 1
         versionName "1.1.121"
