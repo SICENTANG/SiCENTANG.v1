@@ -35,8 +35,9 @@
         </activity>
         <activity
             android:name=".laporanHilang"
-            android:parentActivityName=".MainActivity"
-            />
+            android:label="Kehilangan"
+            android:parentActivityName=".MainActivity"/>
+
     </application>
 
 </manifest>

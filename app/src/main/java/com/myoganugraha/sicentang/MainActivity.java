@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Manually displaying the first fragment - one time only
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.frame_layout, profile.newInstance());
+        transaction.replace(R.id.frame_layout, home.newInstance());
         transaction.commit();
 
     }
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         this.doubleBackToExitPressedOnce = true;
-        Toast.makeText(this, "Tekan 2 Kali Untuk Keluar Dari Aplikasi", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Tap again to exit the app", Toast.LENGTH_SHORT).show();
 
         new Handler().postDelayed(new Runnable() {
 
