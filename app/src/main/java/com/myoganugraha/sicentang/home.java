@@ -4,6 +4,7 @@
 
 package com.myoganugraha.sicentang;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
@@ -36,6 +37,16 @@ public class home extends Fragment {
         btnHilang = (Button) view.findViewById(R.id.btnHilang);
         btnTemu = (Button) view.findViewById(R.id.btnTemukan);
         btnLainnya = (Button) view.findViewById(R.id.btnLaporanLain);
+
+        btnHilang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity().getApplicationContext(),
+                        laporanHilang.class);
+                startActivity(i);
+                getActivity().finish();
+            }
+        });
 
         adapter = new CustomSwipeAdapter(this.getActivity());
         viewPager.setAdapter(adapter);
