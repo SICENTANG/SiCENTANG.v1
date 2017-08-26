@@ -20,4 +20,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- AdMob ad unit IDs -->
+    <string name="startup">ca-app-pub-3653711135189794/3978881221</string>
 </resources>

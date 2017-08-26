@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.myoganugraha.sicentang_sql.home">
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context="com.myoganugraha.sicentang.home">
 
 
     <LinearLayout
@@ -12,7 +13,8 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:gravity="center"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2">
 
         <TextView
             android:layout_width="wrap_content"
@@ -52,7 +54,7 @@
 
         <Button
             android:id="@+id/btn_logout"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dip"
             android:background="@null"
@@ -60,8 +62,16 @@
             android:textAllCaps="false"
             android:textColor="@color/btm_navbar_ic"
             android:textSize="15sp" />
-
-
     </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/startup">
+    </com.google.android.gms.ads.AdView>
 
 </RelativeLayout>

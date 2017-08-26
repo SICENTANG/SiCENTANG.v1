@@ -17,6 +17,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.myoganugraha.sicentang.helper.SQLiteHandler;
 import com.myoganugraha.sicentang.helper.SessionManager;
 
@@ -30,17 +33,20 @@ public class profile extends Fragment implements View.OnClickListener {
     private TextView txtEmail;
     private TextView txtJoin;
     private Button btnLogout;
+    private AdView mAdView;
 
     private SQLiteHandler db;
     private SessionManager session;
 
     public static profile newInstance() {
+
         profile fragment = new profile();
         return fragment;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
 
 
@@ -83,16 +89,21 @@ public class profile extends Fragment implements View.OnClickListener {
 
 
 
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootview = inflater.inflate(R.layout.fragment_profile, container, false);
+
 
         txtName = (TextView) rootview.findViewById(R.id.name);
         txtEmail = (TextView) rootview.findViewById(R.id.email);
         txtJoin = (TextView) rootview.findViewById(R.id.joinDate);
         btnLogout = (Button) rootview.findViewById(R.id.btn_logout);
         btnLogout.setOnClickListener(this);
+
+        
 
         // Fetching user details from sqlite
         HashMap<String, String> user = db.getUserDetails();
