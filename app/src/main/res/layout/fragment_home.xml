@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:androi="http://schemas.android.com/apk/res-auto"
     tools:context="com.myoganugraha.sicentang.home">
 
     <ImageView
@@ -30,12 +31,16 @@
         android:layout_height="40sp"
         android:layout_marginTop="50sp"
         android:text="@string/btn_hilang"
+        android:textAlignment="center"
         android:textColor="@color/btm_navbar_ic"
         android:background="@drawable/border_button_home"
         android:layout_below="@+id/view_pager"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="40sp"
-        android:layout_marginRight="40sp"/>
+        android:layout_marginRight="40sp"
+        android:drawableStart="@drawable/lost"
+        android:paddingLeft="25sp"
+        android:paddingRight="15sp"/>
 
     <Button
         android:id="@+id/btnTemukan"
@@ -45,10 +50,14 @@
         android:layout_width="fill_parent"
         android:layout_height="40sp"
         android:text="@string/btn_temukan"
+        android:textAlignment="center"
         android:textColor="@color/btm_navbar_ic"
         android:background="@drawable/border_button_home"
         android:layout_below="@+id/btnHilang"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:drawableStart="@drawable/found"
+        android:paddingLeft="25sp"
+        android:paddingRight="15sp"/>
 
     <Button
         android:id="@+id/btnLaporanLain"
@@ -58,10 +67,14 @@
         android:layout_width="fill_parent"
         android:layout_height="40sp"
         android:text="@string/btn_laporkanLain"
+        android:textAlignment="center"
         android:textColor="@color/btm_navbar_ic"
         android:background="@drawable/border_button_home"
         android:layout_below="@+id/btnTemukan"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:drawableStart="@drawable/etc"
+        android:paddingLeft="25sp"
+        android:paddingRight="15sp"/>
 
 
 </RelativeLayout>
