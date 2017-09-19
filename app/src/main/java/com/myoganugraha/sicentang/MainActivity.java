@@ -79,7 +79,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
         this.doubleBackToExitPressedOnce = true;
-        Toast.makeText(this, "Tap again to exit the app", Toast.LENGTH_SHORT).show();
 
         new Handler().postDelayed(new Runnable() {
 

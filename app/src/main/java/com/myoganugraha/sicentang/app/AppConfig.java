@@ -13,5 +13,7 @@ public class AppConfig {
 
     // Server user register url
     public static String URL_REGISTER = "http://sicentang.xyz/registeradalahdaftar.php";
+
+    public static final String IMAGE_DIRECTORY_NAME = "SiCENTANG";
 }
 

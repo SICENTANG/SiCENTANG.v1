@@ -103,7 +103,7 @@ public class profile extends Fragment implements View.OnClickListener {
         btnLogout = (Button) rootview.findViewById(R.id.btn_logout);
         btnLogout.setOnClickListener(this);
 
-        
+
 
         // Fetching user details from sqlite
         HashMap<String, String> user = db.getUserDetails();
